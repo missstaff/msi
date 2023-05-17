@@ -7,7 +7,7 @@ const MobileNavButton = ({ handleMobileNavClick, mobileNavBtnSize }) => {
         <button className="btn-mobile-nav" >
             <MenuOutline
                 className="icon-mobile-nav" name="menu-outline"
-                color={'#cf711f'}
+                color={'#D41858'}
 
                 height={mobileNavBtnSize}
                 width={mobileNavBtnSize}

@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { sizes } from "../Utilities/ScreenSizes";
 
+
 export const useMediaQuery = (screen) => {
 
     const [matches, setMatches] = useState(false);
+
 
     useEffect(() => {
         const query = `(min-width: ${sizes[screen]})`;
@@ -16,5 +18,6 @@ export const useMediaQuery = (screen) => {
         return () => window.removeEventListener('resize', listener);
     }, [matches, screen]);
 
+    
     return matches;
 };

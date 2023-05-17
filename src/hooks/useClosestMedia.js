@@ -1,9 +1,11 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import { findClosest } from "../Utilities/Utility";
+
 
 export const useClosestMedia = ({queries}) => {
     
     const [closest, setClosest] = useState('xs');
+
 
     useEffect(() => {
         const listener = () => setClosest(findClosest(queries));
@@ -12,5 +14,6 @@ export const useClosestMedia = ({queries}) => {
         return () => window.removeEventListener('resize', listener); //Cleanup
     }, []);
 
+    
     return closest;
 };

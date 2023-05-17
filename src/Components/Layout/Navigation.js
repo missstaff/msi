@@ -6,6 +6,7 @@ import "../../css/Navigation.css";
 
 const Navigation = () => {
 
+
     const isLargeScreen = useMediaQuery("lg");
     const isMediumScreen = useMediaQuery("md");
     const isSmallScreen = useMediaQuery("sm");
@@ -34,6 +35,7 @@ const Navigation = () => {
     }, [isLargeScreen, isMediumScreen, isSmallScreen, isExtraSmallScreen]);
 
 
+    
     return (
 
         <header className={`header ${isMobileNavOpen ? "nav-open" : ""}  `}>

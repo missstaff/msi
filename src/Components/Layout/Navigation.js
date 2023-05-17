@@ -14,7 +14,7 @@ const Navigation = () => {
 
 
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-    const [mobileNavBtnSize, setMobileNavBtnSize] = useState(0);
+    const [mobileNavBtnSize, setMobileNavBtnSize] = useState("");
 
 
     const handleMobileNavClick = () => {

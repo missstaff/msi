@@ -13,7 +13,7 @@ const Form = () => {
                 Let's get started!
               </h2>
               <p className="cta-text">
-                Good stuffs!
+                Tell us your needs and let us bring your vision to life!
               </p>
               <form className="cta-form" name="sign-up" netlify>
                 <div>
@@ -28,8 +28,13 @@ const Form = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message">Let's talk web goals?</label>
+                  <label htmlFor="message">What are your website's goals?</label>
                   <input id="message" type="text" placeholder="Message text ..." name="message" required />
+                </div>
+
+                <div>
+                  <label htmlFor="website">Your current website address (optional)</label>
+                  <input id="website" type="text" placeholder="www.your-site.com" name="website" />
                 </div>
   
                 <div>
@@ -46,7 +51,7 @@ const Form = () => {
                       Podcast
                     </option>
                     <option value="facebook">
-                      facebook ads
+                      Facebook ads
                     </option>
                     <option value="other">
                       Other

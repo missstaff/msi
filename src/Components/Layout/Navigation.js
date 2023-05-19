@@ -1,20 +1,12 @@
 import React, { useEffect, useState } from "react";
 import MobileNavButton from "../UI/MobileNavButton";
-import { useMediaQuery } from "../../hooks/useMediaQuery";
 import "../../css/Navigation.css";
+import "../../css/general.css";
 
 
 const Navigation = () => {
 
-
-    const isLargeScreen = useMediaQuery("lg");
-    const isMediumScreen = useMediaQuery("md");
-    const isSmallScreen = useMediaQuery("sm");
-    const isExtraSmallScreen = useMediaQuery("xs");
-
-
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-    const [mobileNavBtnSize, setMobileNavBtnSize] = useState("");
 
 
     const handleMobileNavClick = () => {
@@ -23,19 +15,21 @@ const Navigation = () => {
 
 
     useEffect(() => {
-        if (isLargeScreen) {
-            setMobileNavBtnSize("50px");
-        } else if (isMediumScreen) {
-            setMobileNavBtnSize("40px");
-        } else if (isSmallScreen) {
-            setMobileNavBtnSize("40px");
-        } else if (isExtraSmallScreen) {
-            setMobileNavBtnSize("30px");
-        }
-    }, [isLargeScreen, isMediumScreen, isSmallScreen, isExtraSmallScreen]);
+        const sectionAboutEl = document.querySelector("#about");
+        const observer = new IntersectionObserver((entries) => {
+            const ent = entries[0];
+            if (!ent.isIntersecting) {
+                document.body.classList.add("sticky");
+            }
+            if (ent.isIntersecting) {
+                document.body.classList.remove("sticky");
+            }
+        }, { root: null, threshold: 0 })
+        observer.observe(sectionAboutEl);
+    }, []);
 
 
-    
+
     return (
 
         <header className={`header ${isMobileNavOpen ? "nav-open" : ""}  `}>
@@ -43,18 +37,23 @@ const Navigation = () => {
                 <img id="logo" className="logo" alt="MSI logo" src={require("../../assets/TransparentLogo.png")} />
             </a>
 
+            <div className="title-container"><h1 className="heading-primary">MSI</h1><p style={{color: "#D41858", fontSize: 22}}>Pixel Perfect Designs</p></div>
+
             <nav className="main-nav">
                 <ul className="main-nav-list">
                     <li>
-                        <a onClick={handleMobileNavClick} href="#about" className="main-nav-link">About</a>
+                        <a onClick={handleMobileNavClick} href="#" className="main-nav-link">HOME</a>
                     </li>
                     <li>
-                        <a onClick={handleMobileNavClick} href="#cta" className="main-nav-link nav-cta">Contact</a>
+                        <a onClick={handleMobileNavClick} href="#about" className="main-nav-link">ABOUT</a>
+                    </li>
+                    <li>
+                        <a onClick={handleMobileNavClick} href="#cta" className="main-nav-link nav-cta">CONTACT</a>
                     </li>
                 </ul>
             </nav>
 
-            <MobileNavButton handleMobileNavClick={handleMobileNavClick} mobileNavBtnSize={mobileNavBtnSize} />
+            <MobileNavButton handleMobileNavClick={handleMobileNavClick} />
 
         </header>
     );

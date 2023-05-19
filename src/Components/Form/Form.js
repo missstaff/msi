@@ -6,7 +6,7 @@ import "../../css/general.css";
 const Form = () => {
     return (
         <section className="section-cta" id="cta">
-        <div className="container">
+        <div className="grid">
           <div className="cta">
             <div className="cta-text-box">
               <h2 className="heading-secondary">
@@ -25,11 +25,6 @@ const Form = () => {
                 <div>
                   <label htmlFor="email">Email address</label>
                   <input id="email" type="email" placeholder="me@example.com" name="email" required />
-                </div>
-
-                <div>
-                  <label htmlFor="message">What are your website's goals?</label>
-                  <input id="message" type="text" placeholder="Message text ..." name="message" required />
                 </div>
 
                 <div>
@@ -57,6 +52,11 @@ const Form = () => {
                       Other
                     </option>
                   </select>
+                </div>
+
+                <div>
+                  <label htmlFor="message">What are your website's goals?</label>
+                  <textarea id="message" type="textarea" placeholder="Message text ..." name="message" rows="3" cols="50" required ></textarea>
                 </div>
   
                 <button className="btn btn--form">Submit</button>

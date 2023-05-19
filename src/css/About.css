@@ -1,0 +1,24 @@
+.about-text {
+    color: #fff;
+    font-size: 2.4rem;
+    line-height: 2.2;
+    text-align: left;
+}
+
+.background-image {
+    background-image: url("../assets/OriginalLogoSymbol.png");
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.services-list {
+    color: #fff;
+    font-size: 2.4rem;
+    line-height: 2.2;
+    text-align: left;
+    text-transform: uppercase;
+}

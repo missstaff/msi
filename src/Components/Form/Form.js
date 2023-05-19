@@ -12,6 +12,9 @@ const Form = () => {
               <h2 className="heading-secondary">
                 Let's get started!
               </h2>
+              <p className="cta-text">
+                Tell us your needs and let us bring your vision to life!
+              </p>
               <form className="cta-form" name="sign-up" netlify>
                 <div>
                   <label htmlFor="full-name">Full Name</label>

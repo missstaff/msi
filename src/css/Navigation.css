@@ -8,10 +8,6 @@
     position: relative;
 }
 
-.logo {
-    height: 12.8rem;
-}
-
 .main-nav-list {
     align-items: center;
     display: flex;

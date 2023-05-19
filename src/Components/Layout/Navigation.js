@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MobileNavButton from "../UI/MobileNavButton";
 import "../../css/Navigation.css";
+import "../../css/general.css";
 
 
 const Navigation = () => {

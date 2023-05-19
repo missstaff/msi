@@ -5,6 +5,7 @@
     flex-direction: column; 
     justify-content: center;
     padding-bottom: 2.2rem;
+    height: fit-content;
 }
 
 

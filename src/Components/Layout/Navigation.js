@@ -36,13 +36,18 @@ const Navigation = () => {
                 <img id="logo" className="logo" alt="MSI logo" src={require("../../assets/TransparentLogo.png")} />
             </a>
 
+            <div className="title-container"><h1 className="heading-primary">MSI</h1><p style={{color: "#D41858", fontSize: 22}}>Pixel Perfect Designs</p></div>
+
             <nav className="main-nav">
                 <ul className="main-nav-list">
                     <li>
-                        <a onClick={handleMobileNavClick} href="#about" className="main-nav-link">About</a>
+                        <a onClick={handleMobileNavClick} href="#" className="main-nav-link">HOME</a>
                     </li>
                     <li>
-                        <a onClick={handleMobileNavClick} href="#cta" className="main-nav-link nav-cta">Contact</a>
+                        <a onClick={handleMobileNavClick} href="#about" className="main-nav-link">ABOUT</a>
+                    </li>
+                    <li>
+                        <a onClick={handleMobileNavClick} href="#cta" className="main-nav-link nav-cta">CONTACT</a>
                     </li>
                 </ul>
             </nav>

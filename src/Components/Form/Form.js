@@ -6,16 +6,12 @@ import "../../css/general.css";
 const Form = () => {
     return (
         <section className="section-cta" id="cta">
-        <h2 className="heading-secondary">Contact</h2>
         <div className="container">
           <div className="cta">
             <div className="cta-text-box">
               <h2 className="heading-secondary">
                 Let's get started!
               </h2>
-              <p className="cta-text">
-                Tell us your needs and let us bring your vision to life!
-              </p>
               <form className="cta-form" name="sign-up" netlify>
                 <div>
                   <label htmlFor="full-name">Full Name</label>
@@ -30,7 +26,7 @@ const Form = () => {
 
                 <div>
                   <label htmlFor="message">What are your website's goals?</label>
-                  <input id="message" type="text" placeholder="Message text ..." name="message" required />
+                  <input id="message" type="textarea" placeholder="Message text ..." name="message" required />
                 </div>
 
                 <div>

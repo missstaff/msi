@@ -1,6 +1,5 @@
 import "../../css/Footer.css";
 import "../../css/general.css";
-import "../../css/Navigation.css"
 
 
 const Footer = () => {

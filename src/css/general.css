@@ -57,21 +57,21 @@
 }
 
 .btn--form{
-  background-color: #fff;
-  color: #0c0b28;
+  background-color: #0c0b28;
+  color: #fff;
   align-self: end;
   padding: 1.8rem;
 }
 
 .btn--form:hover{
-  background-color: #0c0b28;
-  color: #fff;
+  background-color: #fff;
+  color: #0c0b28;
 }
 
 .link:link,
 .link:visited{
   display: inline-block;
-  color: #0c0b28;
+  color: #fff;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
@@ -92,4 +92,6 @@
 .logo {
   height: 12.8rem;
 }
+
+
 

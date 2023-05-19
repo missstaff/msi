@@ -21,3 +21,15 @@ body{
 strong{
   font-weight: 500;
 }
+
+@media(max-width: 75em){
+  html{
+    font-size: 56.25%;
+  }
+}
+
+@media(max-width: 59em){
+  html{
+    font-size: 50%;
+  }
+}

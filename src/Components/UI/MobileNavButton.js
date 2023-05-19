@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MenuOutline } from 'react-ionicons';
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import "../../css/Navigation.css";
+import "../../css/general.css";
 
 
 const MobileNavButton = ({ handleMobileNavClick }) => {

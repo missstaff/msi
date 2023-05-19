@@ -6,12 +6,12 @@ import Navigation from "./Components/Layout/Navigation";
 
 function App() {
   return (
-      <div style={{ height: "100vh", width: "100%", margin: 0, padding: 0 }}>
-       <Navigation />
-        <About />
-        <Form />
-       <Footer />
-     </div>
+    <div style={{ height: "100%", width: "100%", margin: 0, padding: 0 }}>
+      <Navigation />
+      <About />
+      <Form />
+      <Footer />
+    </div>
   );
 };
 

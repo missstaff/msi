@@ -6,6 +6,7 @@ import "../../css/general.css";
 const Form = () => {
     return (
         <section className="section-cta" id="cta">
+        <h2 className="heading-secondary">Contact</h2>
         <div className="container">
           <div className="cta">
             <div className="cta-text-box">

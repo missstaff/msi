@@ -6,7 +6,7 @@ import "../css/About.css";
 const About = () => {
     return (
         <div className="background-image" style={{ height: "100%", paddingTop: 96, paddingBottom: 96, paddingLeft: 50, paddingRight: 50 }}>
-            <h2 id="about" className="heading-secondary" style={{ color: "white", fontSize: 50 }} >At MSI, our mission is simple yet impactful</h2>
+            <h2 id="about" className="heading-secondary" style={{ color: "white", fontSize: 50 }} >At MSI our mission is simple yet impactful</h2>
             <div className="grid grid--2-cols" style={{ justifyContent: "center" }}>
 
                 <div style={{ paddingTop: 10, paddingBottom: 10, paddingLeft: 50, paddingRight: 50, width: "100%" }}>

@@ -37,7 +37,6 @@ const Navigation = () => {
                 <img id="logo" className="logo" alt="MSI logo" src={require("../../assets/TransparentLogo.png")} />
             </a>
 
-            {/* <div className="title-container"><h1 className="heading-primary">MSI</h1><p style={{color: "#D41858", fontSize: 22}}>Pixel Perfect Designs</p></div> */}
 
             <nav className="main-nav">
                 <ul className="main-nav-list">

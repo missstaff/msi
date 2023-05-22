@@ -83,12 +83,12 @@
 }
 
 .sticky .main-nav-link{
-    color: #D41858;
+    color: #333;
 }
 
 .sticky .main-nav-link:hover,
 .sticky .main-nav-link:active {
-    color: #0c0b28;
+    color: #D41858;
 }
 
 .sticky .main-nav-link.nav-cta:hover,

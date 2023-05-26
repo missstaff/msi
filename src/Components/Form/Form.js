@@ -59,7 +59,7 @@ const Form = () => {
                   <textarea id="message" type="textarea" placeholder="Message text ..." name="message" rows="3" cols="50" required ></textarea>
                 </div>
   
-                <button className="btn btn--form">Submit</button>
+                <button className="btn btn--form" type="submit">Submit</button>
               </form>
             </div>
             <div className="cta-image-box" role="img" aria-label="msi logo in gray scale">

@@ -15,7 +15,7 @@ const Form = () => {
               <p className="cta-text">
                 Tell us your needs and let us bring your vision to life!
               </p>
-              <form className="cta-form" name="sign-up" method="POST" data-netlify="true">
+              <form className="cta-form" name="sign-up" netlify>
                 <div>
                   <label htmlFor="full-name">Full Name</label>
                   <input id="full-name" type="text" placeholder="Jane Doe" name="full-name" required />
@@ -59,7 +59,7 @@ const Form = () => {
                   <textarea id="message" type="textarea" placeholder="Message text ..." name="message" rows="3" cols="50" required ></textarea>
                 </div>
   
-                <button className="btn btn--form" type="submit">Submit</button>
+                <button className="btn btn--form">Submit</button>
               </form>
             </div>
             <div className="cta-image-box" role="img" aria-label="msi logo in gray scale">

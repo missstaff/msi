@@ -15,7 +15,7 @@ const Form = () => {
               <p className="cta-text">
                 Tell us your needs and let us bring your vision to life!
               </p>
-              <form className="cta-form" name="sign-up" netlify>
+              <form className="cta-form" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
                 <div>
                   <label htmlFor="full-name">Full Name</label>
                   <input id="full-name" type="text" placeholder="Jane Doe" name="full-name" required />

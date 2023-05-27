@@ -34,7 +34,7 @@ const Navigation = () => {
 
         <header className={`header ${isMobileNavOpen ? "nav-open" : ""}  `}>
             <a href="#logo">
-                <img id="logo" className="logo" alt="MSI logo" src={require("../../assets/TransparentLogo.png")} />
+                <img id="logo" className="logo" alt="MSI logo" src={require("../../assets/TransparentLogo2.png")} />
             </a>
 
 

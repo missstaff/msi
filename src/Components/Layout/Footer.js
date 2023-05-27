@@ -6,9 +6,9 @@ const Footer = () => {
    return (
       <div className="footer">
          <div>
-            <img className="logo" src={require("../../assets/TransparentLogo.png")} alt="MSI logo"/>
+            <img className="footer-logo" src={require("../../assets/FooterLogo.png")} alt="MSI logo"/>
          </div>
-         <p style={{ color: "white", marginTop: 2.2 }}>All Rights Reserved</p>
+         <p style={{ color: "white" }}>All Rights Reserved</p>
       </div>
    );
 };

@@ -5,7 +5,13 @@
     flex-direction: column; 
     height: fit-content;
     justify-content: center;
-    padding-bottom: 2.2rem;
+    padding: 2.2rem;
+}
+
+
+.footer-logo{
+    height: 6.8rem;
+    margin-bottom: 1.2rem;
 }
 
 

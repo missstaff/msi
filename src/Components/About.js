@@ -5,7 +5,7 @@ import "../css/About.css";
 
 const About = () => {
     return (
-        <div className="background-image" style={{ height: "100%", paddingTop: 96, paddingBottom: 96, paddingLeft: 50, paddingRight: 50 }}>
+        <div className="background-image" style={{ height: "100%", paddingTop: 96, paddingLeft: 50, paddingRight: 50 }}>
             <h2 id="about" className="heading" >Our mission is to empower small businesses with a stunning online presence</h2>
             <div className="grid" style={{ justifyContent: "center" }}>
 

@@ -62,7 +62,8 @@
 .cta-image-box {
   background-image: url("../assets/logos/TransparentLogo.svg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 59em) {

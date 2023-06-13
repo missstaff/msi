@@ -10,7 +10,7 @@ const Form = () => {
           <div className="cta-text-box">
             <h2 className="heading-secondary">Let's get started!</h2>
             <p className="cta-text">Tell us your needs and let us bring your vision to life!</p>
-            <form className="cta-form" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+            <form className="cta-form" name="contact" method="POST" netlify-honeypot="bot-field" netlify >
               <input type="hidden" name="form-name" value="contact" />
 
               <div className="form-row">
@@ -45,8 +45,8 @@ const Form = () => {
                 <textarea id="message" type="textarea" placeholder="Message text ..." name="message" rows="3" required></textarea>
               </div>
 
-              <div className="form-row">
-                <button className="btn btn--form">Submit</button>
+              <div className="form-row full-width" >
+                <button className="btn btn--form" style={{width: "100%"}}>Submit</button>
               </div>
             </form>
           </div>

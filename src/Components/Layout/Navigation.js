@@ -28,7 +28,9 @@ const Navigation = () => {
         observer.observe(sectionAboutEl);
     }, []);
 
-
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
 
     return (
 
@@ -41,7 +43,7 @@ const Navigation = () => {
             <nav className="main-nav">
                 <ul className="main-nav-list">
                     <li>
-                        <a onClick={handleMobileNavClick} href="#" className="main-nav-link">HOME</a>
+                        <a onClick={() => [handleMobileNavClick(), scrollToTop()]} href="#logo" className="main-nav-link">HOME</a>
                     </li>
                     <li>
                         <a onClick={handleMobileNavClick} href="#about" className="main-nav-link">ABOUT</a>
